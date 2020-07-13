@@ -1,0 +1,47 @@
+.recommend-item{
+  margin:20rpx;
+  background-color: #fff;
+  height:250rpx;
+}
+.title{
+  color:rgb(26,26,26);
+  font-weight: bold;
+  padding:20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.context{
+  display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: normal !important;
+	-webkit-line-clamp: 2;	/*  行数*/
+  -webkit-box-orient: vertical;
+  padding-left:20rpx;
+  font-weight: 300;
+  height:90rpx;
+}
+.author{
+  font-weight: 800;
+  color:#4871ff;
+}
+
+.btn{
+  padding-top:20rpx;
+  padding-left:20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.agree{
+  padding:0 30rpx;
+  display: inline-block;
+  color:#008fdd;
+  background-color: rgb(0,132,255,0.1);
+}
+
+.commend{
+  display: inline-block;
+  margin-right:40rpx;
+  vertical-align: middle;
+}

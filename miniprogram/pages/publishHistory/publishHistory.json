@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"历史发表",
+  "usingComponents": {
+    "publishList":"../../components/publishHistory/publishList/publishList"
+  }
+}

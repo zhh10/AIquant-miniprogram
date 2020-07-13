@@ -1,0 +1,13 @@
+<view class="wrap">
+  <view class="name">{{comment.name}}</view>
+  <view style="height:{{textHeight}}rpx" class="{{!showMore?'context':'contextMore'}}">
+    <view id='text'>{{comment.context}}</view>
+    <view class="date">{{comment.date}}</view>
+  </view>
+  <view wx-if="{{isMore && !showMore}}" class="seemore">
+    <text bindtap="handleMore">查看更多</text>
+  </view>
+  <view wx-if="{{isMore && showMore}}" class="closemore">
+    <text bindtap="handleMore">收起</text>
+  </view>
+</view>

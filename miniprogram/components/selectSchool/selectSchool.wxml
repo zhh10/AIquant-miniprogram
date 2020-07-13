@@ -1,0 +1,19 @@
+<view class="section">
+  <view class="pick-view_pane">
+    <view class="cancel" bindtap="cancel">取消</view>
+    <view class="decide" bindtap="decide">确定</view>
+  </view>
+  <picker-view indicator-style="height:50px"  class="picker"
+  value="{{value}}" 
+  bindchange="pickchange">
+    <picker-view-column style="line-height:50px;" class="province">
+      <view  wx:for="{{province}}" wx:key="index">{{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column style="line-height:50px;" class="city">
+      <view  wx:for="{{city}}" wx:key="index">{{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column style="line-height:50px;" class="school">
+      <view wx:for="{{school}}" wx:key="index">{{item}}</view>
+    </picker-view-column>
+  </picker-view> 
+</view>

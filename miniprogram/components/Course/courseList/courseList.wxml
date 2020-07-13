@@ -1,0 +1,9 @@
+<block wx:if="{{courseData.length>0}}">
+    <view class="header">
+      <span class="text">推荐课程</span>
+      <span class="more" bindtap="handleClick">查看更多>></span>
+    </view>
+    <block wx:for="{{courseData}}" wx:key="id">
+        <CourseItem course="{{item}}" />
+    </block>
+</block>

@@ -1,0 +1,32 @@
+<view class="video-item">
+  <video id="studyVideo" src="{{course.url}}" 
+  class="video" hidden="{{!isPlay}}"></video>
+  <!-- isPlay为false时 不隐藏 -->
+  <view class="video-image" hidden="{{isPlay}}">
+      <image src="{{image}}"></image>
+      <view class="video-title">{{name}}</view>
+      <view 
+      bindtap="handlePlay"
+      class="iconfont icon-bofang"></view>
+  </view>
+  <van-divider contentPosition="center">评论列表</van-divider>
+  <view class="commentArea">
+    <block wx:for="{{commentList}}" wx:key="index">
+      <view class="commentContext">
+        <view class="comment-name"><text>{{item.userName}}</text></view>
+        <view class="comment-context">{{item.comment}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="footer">
+      <van-field
+      value="{{ message }}"
+      clearable
+      label="评论"
+      placeholder="说几句吧"
+      bindinput="handleInput"
+      bind:click-icon="onClickIcon"
+    />
+    <button class="btn" bindtap="submitComment">评论</button>
+  </view>
+</view>

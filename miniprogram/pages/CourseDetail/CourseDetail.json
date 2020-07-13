@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"课程列表",
+  "usingComponents": {
+    "BookList":"/components/Book/BookList/BookList"
+  }
+}

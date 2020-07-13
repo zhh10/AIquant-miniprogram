@@ -1,0 +1,10 @@
+<view class="recommend-item" bindtap="handleClick">
+  <view class="title"><view>{{metting.title}}</view><view>{{metting.date}}</view></view>
+  <view class="context"><text class="author">{{metting.author}}：</text>{{metting.context}}</view>
+  <view class="btn">
+    <view class="agree">赞同 {{metting.agree}}</view>
+    <view class="commend">
+      <van-icon name="chat" size="40rpx" info="{{metting.comment}}" />
+    </view>
+  </view>
+</view>

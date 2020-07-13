@@ -1,0 +1,9 @@
+<view class="wrap" bindtap="handleClick">
+  <view class="context">
+    <image src="{{match.image}}"></image>
+    <view class="text">
+      <view class="timu">{{match.name}}</view>
+    </view>
+  </view>
+  <view><text class="date">报名时间</text> {{match.start}}~{{match.end}}</view>
+</view>

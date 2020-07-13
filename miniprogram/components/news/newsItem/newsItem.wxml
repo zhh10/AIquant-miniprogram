@@ -1,0 +1,5 @@
+<view class="wrap" bindtap="handleClick">
+  <view><text class="name">{{newsItem.name}}</text> 评论了你的问题</view>
+  <view class="context">{{newsItem.context}}</view>
+  <view class="date">{{newsItem.date}}</view>
+</view>

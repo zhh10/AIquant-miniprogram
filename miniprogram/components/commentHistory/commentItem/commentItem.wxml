@@ -1,0 +1,4 @@
+<view class="wrapper" bindtap="handleClick">
+  <view class="title">{{Item.title}}</view>
+  <view class="context"><text class="yours">你的评论：</text>{{Item.context}}</view>
+</view> 

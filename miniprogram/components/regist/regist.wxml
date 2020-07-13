@@ -1,0 +1,39 @@
+<!-- <image class="logo" src="../../static/investnent.png"></image>
+ -->
+<view>
+  <image class="logo" src="http://www.digquant.com.cn/img/logo.5af4c27d.svg"></image>
+  <view class="container">
+    <view hidden="{{isLogin}}">
+      <view class="section">
+        <input class="inp" placeholder-class="placeholder" placeholder="请输入手机号"
+        bindinput="accountInput" value="{{account}}"></input>
+      </view>
+      <view class="section">
+        <input class="inp" placeholder-class="placeholder" placeholder="请输入密码"
+        bindinput="passwordInput" type="password" value="{{password}}"></input>
+      </view>
+      <view class="section">
+        <input class="inp" 
+        disabled="true"
+        placeholder-class="placeholder" 
+        placeholder="请选择学校"
+        bindtap="choose" value="{{school}}"></input>
+      </view>
+      <text class="login" bindtap="switchLogin">已有账号，直接登录</text>
+      <view class="section">
+        <button class="btn" bindtap="Regist">注册</button>
+      </view>
+    </view>
+    <view hidden="{{!isLogin}}">
+      <login bind:SwitchLogin="switchLogin" 
+      accountValue="{{account}}" passwordValue="{{password}}"
+      bind:handleLogin="Login" bind:accountInput="accountInput"
+      bind:passwordInput="passwordInput"
+    />
+    </view>
+  </view>
+  <view hidden="{{isShow}}">
+    <selectSchool bind:handleClose="close" 
+    bind:handleDecide="decide"/>
+  </view>
+</view>

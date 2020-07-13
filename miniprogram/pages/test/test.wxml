@@ -1,0 +1,53 @@
+<swiper style="height:{{swiperRPXHeight-100}}rpx;">
+  <swiper-item class="swiper-item">
+      <view class="wrapper">
+        <view class="header">
+            <view class="title">{{comment.title}}</view>
+            <view class="author">{{comment.author}}</view>
+        </view>
+        <view class="context">{{comment.context}}</view>
+        <view wx:if="{{!imageShow}}" class="imageShow">
+          <text class="imageShowText" bindtap="imageShow">图片展开</text>
+        </view>
+        <view wx:if="{{imageShow}}" class="imageList">
+          <block wx:for="{{comment.images}}" wx:key="index">
+            <image src="{{item}}"  data-index="{{index}}"
+            bindtap="previewImg"></image>
+          </block>
+          <view class="imageClose">
+            <text class="imageCloseText" bindtap="imageClose">收起</text>
+          </view>
+        </view>
+        <view class="footer">
+          <view class="footer-item">
+            <van-icon name="thumb-circle-o" />好问题：{{comment.agree}}
+          </view>
+          <view class="footer-item">
+            <van-icon name="chat-o" />{{comment.comment}}条评论
+          </view>
+          <view class="footer-item" wx-if="{{!isagree}}"
+          bindtap="handleagree">
+            <van-icon name="like-o" />赞同
+          </view>
+          <view class="footer-item" wx-if="{{isagree}}">
+            <van-icon name='like' color="red" />已赞同+1
+          </view>
+        </view>
+    </view>
+    <view><van-divider contentPosition="center">评论</van-divider></view>
+    <view wx-if="{{comment.comment===0}}"><text>目前暂无评论</text></view>
+      
+  </swiper-item>
+</swiper>
+
+<button class='btn' bindtap="comment">评论</button>
+<van-popup
+  value="{{commentValue}}"
+  show="{{ show }}"
+  position="bottom"
+  custom-style="height: 50%;"
+  bind:close="onClose">
+  <textarea class="textarea" value="{{commentValue}}"
+  bindinput="inputComment"></textarea>
+  <button class="submitBtn" bindtap="submitComment">发表评论</button>
+</van-popup>

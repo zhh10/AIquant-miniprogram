@@ -1,0 +1,25 @@
+.wrap{
+  margin:20rpx;
+  background-color: #fff;
+}
+.name{
+  color:rgb(26,26,26);
+  font-weight: bold;
+  padding:20rpx;
+}
+.context{
+  display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: normal !important;
+	-webkit-line-clamp: 2;	/*  行数*/
+  -webkit-box-orient: vertical;
+  padding-left:20rpx;
+  font-weight: 300;
+  height:90rpx;
+}
+.date{
+  padding-left:20rpx;
+  color:#4871ff;
+}

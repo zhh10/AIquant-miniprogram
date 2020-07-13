@@ -1,0 +1,26 @@
+.wrapper{
+  margin:20rpx;
+  background-color: #fff;
+  height:250rpx;
+}
+.title{
+  color:rgb(26,26,26);
+  font-weight: bold;
+  padding:20rpx;
+}
+.context{
+  display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: normal !important;
+	-webkit-line-clamp: 2;	/*  行数*/
+  -webkit-box-orient: vertical;
+  padding-left:20rpx;
+  font-weight: 300;
+  height:90rpx;
+}
+.yours{
+  font-weight: 800;
+  color:#4871ff;
+}

@@ -1,0 +1,10 @@
+{ 
+  "navigationBarTitleText": "圆桌会议",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"light",
+  "usingComponents": {
+    "recommendList":"/components/recommend/recommendList/recommendList",
+    "publicList":"/components/publicCmp/publicList/publicList",
+    "workList":"/components/work/workList/workList"
+  }
+}

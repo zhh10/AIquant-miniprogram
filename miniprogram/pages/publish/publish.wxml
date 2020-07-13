@@ -1,0 +1,29 @@
+<van-overlay show="{{ show }}">
+  <view class="wrapper">
+    <view class="header"><text>发起讨论</text></view>
+    <van-icon name="close" class="closeBtn"  bindtap="handleClose"/>
+    <view class="title-wrapper">
+      <view class="title"><text>会议标题</text></view>
+      <input class="inp" value="{{title}}" bindinput="handleTitle"></input>
+    </view>
+    <view class="text-wrapper">
+      <textarea class="text" 
+      maxlength="-1"      
+      placeholder="输入会议内容"
+      placeholder-class="placeholder"
+      bindinput="handleContext" 
+      value="{{context}}"></textarea>
+    </view>
+    <view class="photo-wrapper">
+      <scroll-view class="scroll" scroll-x>
+        <van-uploader max-count="3"  
+        multiple
+        class="photo" file-list="{{ fileList }}" 
+        deletable="true"
+        bind:delete="handleDelete"
+        bind:after-read="afterRead" />
+        </scroll-view>
+    </view>
+    <button class="btn" bindtap="handleClick">开启会议室</button>
+  </view>
+</van-overlay>

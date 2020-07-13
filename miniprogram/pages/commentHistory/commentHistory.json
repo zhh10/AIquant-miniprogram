@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"历史评论",
+  "usingComponents": {
+    "commentList":"../../components/commentHistory/commentList/commentList"
+  }
+}

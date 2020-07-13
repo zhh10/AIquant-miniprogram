@@ -1,0 +1,51 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/person/person",
+    "pages/community/community",
+    "pages/test/test",
+    "pages/publish/publish",
+    "pages/login/login",
+    "pages/CourseDetail/CourseDetail",
+    "pages/pp/pp",
+    "pages/publishHistory/publishHistory",
+    "pages/commentHistory/commentHistory",
+    "pages/video/video",
+    "pages/newsList/newsList",
+    "pages/matchPlay/matchPlay"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "borderStyle": "#ddd",
+    "selectedColor": "#2d84f0",
+    "list": [
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "static/community.png",
+        "selectedIconPath": "static/selected_community.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/page.png",
+        "selectedIconPath": "static/selected_page.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "static/mine.png",
+        "selectedIconPath": "static/selected_mine.png"
+      }
+    ]
+  }
+}

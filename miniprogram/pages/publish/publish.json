@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

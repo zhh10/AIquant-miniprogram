@@ -1,0 +1,10 @@
+.noneComment{
+  width:400rpx;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color:#ddd;
+  font-size: 40rpx;
+}

@@ -1,0 +1,27 @@
+<swiper autoplay 
+interval="3000" 
+duration="500" 
+indicator-dots 
+indicator-active-color="#2d8cf0"
+indicator-color="#ddd">
+  <swiper-item>
+    <navigator url="/">
+      <image src="http://dq-storage.oss-cn-shenzhen.aliyuncs.com/public/admin/25/home/banner/02-1590136540326-7159363876674338.jpg"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url="/">
+      <image src="https://bpstoragenormal.blob.core.chinacloudapi.cn/digquant/prod/ModelType/20200518184039_微信图片_20200518184010.png"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url="/">
+      <image src="http://dq-storage.oss-cn-shenzhen.aliyuncs.com/public/user/24366/live/cover/微信图片_20200616092706-1592271071568-9610335289527749.png"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator>
+      <image src="https://storage.digquant.com.cn/public/user/-1/default/1249214631png"></image>
+    </navigator>
+  </swiper-item>
+</swiper>

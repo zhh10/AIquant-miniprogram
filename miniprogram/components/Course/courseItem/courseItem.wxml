@@ -1,0 +1,15 @@
+<view class="wrap" bindtap="handleClick">
+  <image class="img" src="{{course.image}}"></image>
+  <view class="context">
+      <view>{{course.name}}</view>
+      <view class="right">
+        <view wx:if="{{course.isFree}}"> 
+            <view class="icon">免费</view>
+        </view>
+        <view wx:if="{{!course.isFree}}">
+          <view>{{course.price}}元</view>
+        </view>
+        <view class="persons">{{course.persons}}人订阅</view>
+        </view>  
+  </view>
+</view>

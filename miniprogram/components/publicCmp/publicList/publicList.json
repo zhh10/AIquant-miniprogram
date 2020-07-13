@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "publicItem":"/components/publicCmp/publicItem/publicItem"
+  }
+}

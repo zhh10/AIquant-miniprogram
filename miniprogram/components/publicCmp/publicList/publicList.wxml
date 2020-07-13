@@ -1,0 +1,5 @@
+<view class="publicList">  
+  <block wx:for="{{publicList}}" wx:key="index">
+      <publicItem public="{{item}}"/>
+  </block>    
+</view>

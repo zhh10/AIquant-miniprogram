@@ -1,0 +1,26 @@
+.section{
+  margin-top:30px;
+}
+
+.section input{
+  display: block;
+  width:80%;
+  margin:0 auto;
+  padding:10rpx;
+  border: 1px solid #0084ff;
+  border-radius: 5px;
+}
+
+.placeholder{
+  font-size:25rpx;
+  color:rgb(188,188,188)
+}
+.login{
+  margin-left:25px;
+  font-size:20rpx;
+  color:#2d8cf0;
+}
+.btn{
+  color:#fff;
+  background-color: #2d8cf0;
+}

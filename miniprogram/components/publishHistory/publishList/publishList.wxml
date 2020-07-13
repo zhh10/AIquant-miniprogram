@@ -1,0 +1,8 @@
+<view wx:if="{{publishHistory.length > 0}}">
+  <block wx:for="{{publishHistory}}" wx:key="index">
+    <publishItem Item="{{item}}"/>
+  </block>  
+</view>
+<view class="none" wx:if="{{publishHistory.length === 0}}">
+  你还没有发布过
+</view>

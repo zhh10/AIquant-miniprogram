@@ -1,0 +1,82 @@
+.wrapper{
+  margin:20rpx;
+  background-color: #fff;
+}
+.header{
+  margin:10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  font-weight: bold;
+  color:#1a1a1a;
+  font-size:40rpx;
+}
+.author{
+  font-size:35rpx;
+  color: #3c9cfe;
+}
+.context,.date{
+  margin:20rpx;
+}
+.imageShow{
+  color:#3c9cfe;
+  overflow: hidden;
+}
+.imageShowText{
+  float:right;
+  display: block;margin-right:20rpx;
+  margin-right:20rpx;
+}
+.imageList{
+  text-align: center;
+}
+.imageClose{
+  color:#3c9cfe;
+  overflow: hidden;
+}
+.imageCloseText{
+  float:right;
+  display: block;margin-right:20rpx;
+  margin-right:20rpx;
+}
+.footer{
+  display: flex;
+}
+.footer-item{
+  height:50rpx;
+  line-height: 50rpx;
+  color:#8590a6;
+  margin:20rpx;
+  vertical-align:baseline;
+}
+.van-icon{
+  margin-right:20rpx;
+  display: inline-block;
+}
+.btn{
+  width:100%;
+  height:100rpx;
+  color:#fff;
+  background-color: #3c9cfe;
+  position: fixed;
+  bottom:0;
+}
+.swiper-item{
+  overflow: auto;
+}
+
+.textarea{
+  width:90%;
+  height:80%;
+  margin:0 auto;
+  margin-top:20rpx;
+  border:2rpx solid #ddd;
+}
+.submitBtn{
+  width:80%;
+  margin:0 auto;
+  background-color: #3c9cfe;
+  color:#fff;
+}
+

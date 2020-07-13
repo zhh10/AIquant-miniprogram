@@ -1,0 +1,62 @@
+<swiper style="height:{{swiperRPXHeight-100}}rpx;">
+  <swiper-item class="swiper-item">
+      <view class="wrapper">
+        <view class="header">
+            <view class="title">{{metting.title}}</view>
+            <view class="author">{{metting.author}}</view>
+        </view>
+        <view class="context">{{metting.context}}</view>
+        <view class="date">{{metting.date}}</view>
+        <view wx:if="{{metting.images.length>0 && !imageShow}}" class="imageShow">
+          <text class="imageShowText" bindtap="imageShow">图片展开</text>
+        </view>
+        <view wx:if="{{metting.images.length>0 && imageShow}}" class="imageList">
+          <block wx:for="{{metting.images}}" wx:key="index">
+            <image src="{{item}}"  data-index="{{index}}"
+            bindtap="previewImg"></image>
+          </block>
+          <view class="imageClose">
+            <text class="imageCloseText" bindtap="imageClose">收起</text>
+          </view>
+        </view>
+        <view class="footer">
+          <view class="footer-item">
+            <van-icon name="thumb-circle-o" />好问题：{{metting.agree}}
+          </view>
+          <view class="footer-item">
+            <van-icon name="chat-o" />{{metting.comment}}条评论
+          </view>
+          <view class="footer-item" wx-if="{{!isagree}}"
+          bindtap="handleagree">
+            <van-icon name="like-o" />赞同
+          </view>
+          <view class="footer-item" wx-if="{{isagree}}">
+            <van-icon name='like' color="red" />已赞同+1
+          </view>
+        </view>
+    </view>
+    <view><van-divider contentPosition="center">评论</van-divider></view>
+    <view wx-if="{{metting.comment===0}}"><text>目前暂无评论</text></view>
+    <block wx-if="{{metting.comment>0}}" 
+    wx:for="{{metting.commentList}}" 
+    wx:key="date"
+    >
+    <!-- <view>{{item.date}}</view> -->
+      <commentItem comment="{{item}}"/>
+    </block>  
+  </swiper-item>
+</swiper>
+
+<button class='btn' bindtap="comment">评论</button>
+<van-popup
+  show="{{ show }}"
+  position="top"
+  custom-style="height: 50%;"
+  bind:close="onClose">
+  <textarea 
+  class="textarea"
+  maxlength="-1"
+  value="{{commentValue}}"
+  bindinput="inputComment"></textarea>
+  <button class="submitBtn" bindtap="submitComment">发表评论</button>
+</van-popup>

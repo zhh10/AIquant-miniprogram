@@ -1,0 +1,3 @@
+<block wx:for="{{companyList}}" wx:key="companyName">
+  <workItem work="{{item}}" />
+</block>

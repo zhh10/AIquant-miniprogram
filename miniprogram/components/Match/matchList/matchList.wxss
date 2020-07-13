@@ -1,0 +1,10 @@
+.header{
+  padding:20rpx;
+  color:#292a33;
+  font-size:40rpx;
+}
+.text{
+  padding-left:40rpx;
+  display: inline-block;
+  border-left:8rpx solid #007aff;
+}

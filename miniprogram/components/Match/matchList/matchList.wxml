@@ -1,0 +1,8 @@
+<block wx:if="{{MatchData.length>0}}">
+  <view class="header">
+    <view class="text">赛事活动</view>
+  </view>
+  <view wx:for="{{MatchData}}" wx:key="_id">
+    <matchItem match="{{item}}"></matchItem>
+  </view>
+</block>

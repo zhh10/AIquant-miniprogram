@@ -1,0 +1,25 @@
+.wrap-item{
+  height:350rpx;
+  background-color: #fff;
+  margin:20rpx;
+}
+.img{
+  width:100%;
+  height:250rpx;
+}
+
+.desc{
+  display: flex;
+  justify-content: space-between;
+}
+.persons{
+  color:#8c96a6;
+  font-size:24rpx;
+  font-weight: 400;
+}
+.price{
+  color:#007aff;
+}
+.price{
+  display:flex;
+}

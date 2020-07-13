@@ -1,0 +1,55 @@
+<view class="wrap">
+  <view class="bg"></view>
+  <view class="person">
+    <view class="head">
+        <image class="img" src="http://img1.imgtn.bdimg.com/it/u=116907225,3214345018&fm=26&gp=0.jpg"></image>
+    </view>
+    <view class="pleaseLogin" wx:if="{{!isLogin}}">
+        <view class="text">客官请登录</view>
+        <button class="btn" bindtap="updateName" bindtap="goLogin">登录</button>
+    </view>
+    <view wx:if="{{isLogin}}" class="Logining">
+        <view class="welcome">欢迎你,<text class="userName">{{personData.userName}}</text></view>
+        <button class="updateName" bindtap="updateName">修改昵称</button>
+        <view class="cell-group">
+        <van-cell-group title="个人资料">
+          <van-cell title="用户昵称" value="{{personData.userName}}" />
+          <van-cell title="所属学校" value="{{personData.school}}" />
+          <!-- <van-cell title="个人账号" value="{{personData._id}}" /> -->
+        </van-cell-group>
+        <van-cell-group title="功能列表">
+          <van-cell is-link title="历史发布" value="查看" link-type="navigateTo" url="/pages/publishHistory/publishHistory" />
+          <van-cell is-link title="历史评论" value="查看" link-type="navigateTo" url="/pages/commentHistory/commentHistory" />
+          <van-cell value="查看" is-link 
+          bindtap="navigatoToNewsList"
+          >
+            <view slot="title" class="news">
+              <view class="van-cell-text">消息列表</view>
+              <!-- 未处理的消息 -->
+              <view wx:if="{{personData.waitSelected>0}}"> 
+                <van-tag type="danger">{{personData.waitSelected}}</van-tag>
+              </view>
+              
+            </view>
+          </van-cell>
+        </van-cell-group>
+        <view class="cancelLogin">
+          <button class="btn" bindtap="cancelLogin">退出登录</button>
+        </view>
+    </view>   
+    </view>
+    <van-popup show="{{ show }}" bind:close="onClose">
+      <view class="updateInput">
+        <view class="h1"><text>修改昵称</text></view>
+        <input class="inp" value="{{newName}}"
+        bindinput="inputNewName"></input>
+        <button class="btn" bindtap="submitNewName">修改</button>
+      </view>
+    </van-popup>
+  </view>
+</view>
+<!-- <view wx-if="{{!isLogin}}">
+  <navigator url="/pages/login/login">登录</navigator>
+</view>
+<view wx-if="{{isLogin}}" bindtap="cancelLogin">取消登录</view>
+<view bindtap="updateName">修改昵称</view> -->

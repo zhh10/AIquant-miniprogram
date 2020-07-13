@@ -1,0 +1,6 @@
+<view class="wrap">
+  <view class="title">{{matchData.name}}</view>
+  <image class="img" src="{{matchData.image}}"></image>
+  <view class="text">{{matchData.Detail}}</view>
+</view>
+<button class="btn">报名比赛</button>

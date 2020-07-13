@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "selectSchool":"/components/selectSchool/selectSchool",
+    "login":"/components/login/login"
+}
+}

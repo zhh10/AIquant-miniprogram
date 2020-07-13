@@ -1,0 +1,13 @@
+
+.wrap{
+  display: flex;
+  height:100%;
+}
+.total{
+  overflow: auto;
+  height:100%;
+  width: 100%;
+}
+.content{
+  height:100%;
+}

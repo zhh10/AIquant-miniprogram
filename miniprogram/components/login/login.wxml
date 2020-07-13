@@ -1,0 +1,14 @@
+<view>
+  <view class="section">
+    <input placeholder-class="placeholder" placeholder="请输入账号"
+    value="{{accountValue}}" bindinput="handleAccount"></input>
+  </view>
+  <view class="section">
+    <input placeholder-class="placeholder" type="password" placeholder="请输入密码"
+    value="{{passwordValue}}" bindinput="handlePassword"></input>
+  </view>
+  <text class="login" bindtap="switch">还没有账号，现在注册</text>
+  <view class="section">
+     <button class="btn" bindtap="handleClick">登录</button>
+  </view>
+</view>

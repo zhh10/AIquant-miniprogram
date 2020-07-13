@@ -1,0 +1,39 @@
+<view class="wrap">
+  <van-sidebar id='nav' active-key="{{ activeKey }}" bind:change="onChange">
+    <van-sidebar-item  title="金融学" />
+    <van-sidebar-item  title="量化投资" />
+    <van-sidebar-item  title="区块链" />
+  </van-sidebar>
+  <scroll-view class="total" 
+  throttle="{{false}}"
+  scroll-y scroll-into-view="{{toView}}">
+      <view id='a' class="content">
+        <block wx:if="{{stockData.length>0}}">
+            <ul>
+              <li wx:for="{{stockData}}" wx:key="id">
+                <BookItem course="{{item}}" />
+              </li>
+            </ul>
+        </block>
+      </view>
+      <view id='b' class="content">
+        <block wx:if="{{quantData.length>0}}">
+            <ul>
+              <li wx:for="{{quantData}}" wx:key="id">
+                <BookItem course="{{item}}" />
+              </li>
+            </ul>
+        </block>
+      </view>
+      <view id='c' class="content">
+        <block wx:if="{{chainData.length>0}}">
+            <ul>
+              <li wx:for="{{chainData}}" wx:key="id">
+                <BookItem course="{{item}}" />
+              </li>
+            </ul>
+        </block>
+      </view>
+  </scroll-view>  
+</view>
+

@@ -1,0 +1,10 @@
+<view class="recommendList">  
+  <block wx:for="{{metting}}" wx:key="index">
+      <recommendItem metting="{{item}}"/>
+  </block>  
+  <view class="commend">
+    <image class="img"
+    src="../../../static/comment.png"
+    bindtap="handleClick"></image> 
+  </view>
+</view>

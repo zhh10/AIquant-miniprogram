@@ -1,0 +1,8 @@
+<view class="noneComment" wx:if="{{newsList.length===0 }}">
+  <view>目前还没有学生评论你</view>
+</view>
+<view wx:if="{{newsList.length>0}}">
+    <block wx:for="{{newsList}}" wx:key="date">
+      <newsItem newsItem="{{item}}"/>
+    </block>
+</view>

@@ -1,0 +1,105 @@
+Page{
+  height:100%;
+}
+.wrap{
+  height: 100%;
+}
+.bg{
+  height:20%;
+  background: url('http://www.digquant.com.cn/img/banner.258e253b.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.person{
+  height:80%;
+  position: relative;
+}
+.head{
+  position: absolute;
+  display: block;
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.img{
+  width:100%;
+  height:100%;
+}
+.pleaseLogin{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.pleaseLogin .text{
+  font-size:40rpx;
+  color:rgba(0,0,0,.3)
+}
+.pleaseLogin .btn{
+  background-color: #0084ff;
+  color:#fff;
+}
+.Logining{
+  padding-top:50rpx;
+  text-align: center;
+}
+.userName{
+  font-size:30rpx;
+  color:#0084ff;
+  font-weight: bold;
+}
+.updateName{
+  width:160rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  color:#fff;
+  background-color: #0084ff;
+  position: absolute;
+  right:0;
+  top:50rpx;
+  margin-right:30rpx;
+  font-size:25rpx;
+}
+.cell-group{
+  padding-top:30rpx;
+}
+.cancelLogin{
+  padding-top:30rpx;
+}
+.Logining .btn{
+  width:80%;
+  background-color: #0084ff;
+  color:#fff;
+}
+.updateInput{
+  width:600rpx;
+  /* height:300rpx */
+}
+.updateInput .h1{
+  font-size: 40rpx;
+  color:#0084ff;
+  text-align: center;
+}
+.updateInput .inp{
+  text-indent: 20rpx;
+  width:80%;
+  border-radius: 10rpx;
+  border:2rpx solid #0084ff;
+  display: block;
+  margin: 20rpx auto;
+}
+.updateInput .btn{
+  margin-bottom: 20rpx;
+  width:80%;
+  color:#fff;
+  background-color: #0084ff;
+}
+.news{
+  display: flex;
+  justify-content: center;
+}
+

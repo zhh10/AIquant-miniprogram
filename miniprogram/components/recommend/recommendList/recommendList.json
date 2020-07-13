@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "recommendItem":"/components/recommend/recommendItem/recommendItem"
+  }
+}

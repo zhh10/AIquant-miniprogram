@@ -1,0 +1,26 @@
+.section{
+  width:100%;
+  position: absolute;
+  bottom:0;
+  z-index:999;
+  background-color: #fff;
+}
+.picker{
+  height:450rpx;
+}
+.pick-view_pane{
+  height:100rpx;
+  padding:20rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.cancel{
+  color:green;
+  font-size:30rpx;
+}
+.decide{
+  color:red;
+  font-size:30rpx;
+}

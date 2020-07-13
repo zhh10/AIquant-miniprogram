@@ -1,0 +1,29 @@
+.wrap{
+  margin:30rpx 20rpx;
+}
+.img{
+  height:300rpx;
+}
+.context{
+  display: flex;
+  height:50rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.right{
+  display: flex;
+}
+.icon{
+  background-color:#007aff;
+  font-size:24rpx;
+  line-height: 50rpx;
+  color:#fff;
+  padding:0 10rpx;
+}
+.persons{
+  color:#ddd;
+  margin-left:30rpx;
+}
+.van-tag{
+  display: block;
+}

@@ -1,0 +1,36 @@
+.wrap{
+  margin:20rpx;
+  background-color: #fff;
+}
+.name{
+  margin:10rpx;
+  font-weight: bold;
+  color:#3c9cfe;
+  font-size:40rpx;
+}
+.context{
+  margin:20rpx 20rpx 0 20rpx; 
+  font-size:35rpx;
+  /* height:200rpx; */
+  overflow: hidden;
+  word-break: break-all;
+}
+.contextMore{
+  margin:20rpx 20rpx 0 20rpx;
+  font-size:35rpx;
+  height:auto !important;
+  word-break: break-all;
+}
+.date{
+  color:#3c9cfe
+}
+.seemore{
+  background: linear-gradient(transparent,#000);
+  text-align: center;
+  color:#fff;
+}
+.closemore{
+  text-align: center;
+  color:#3c9cfe
+}
+

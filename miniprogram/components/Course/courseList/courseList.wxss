@@ -1,0 +1,17 @@
+.header{
+  padding:20rpx;
+  color:#292a33;
+  font-size:40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.text{
+  padding-left:40rpx;
+  display: inline-block;
+  border-left:8rpx solid #007aff;
+  display: inline-block;
+}
+.more{
+  color: #007aff;
+  font-size: 24rpx;
+}

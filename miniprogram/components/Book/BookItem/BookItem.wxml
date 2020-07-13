@@ -1,0 +1,19 @@
+<view class="wrap-item" bindtap="handleClick">
+  <image class="img" src="{{course.image}}"></image>
+  <view class="content">
+      <view>{{course.name}}</view>
+      <view class="desc">
+        <view class="price" >
+            <view wx:if="{{course.isFree}}">
+              <van-tag type="primary">免费</van-tag>
+            </view>
+            <view wx:if="{{!course.isFree}}">{{course.price}}元</view>
+            <van-tag type="danger">推荐</van-tag>
+        </view>
+        <!-- <view class="price" wx:if="{{!course.isFree}}">
+          <view>{{course.price}}元</view>
+        </view> -->
+        <view class="persons">{{course.persons}}人已订阅</view>
+      </view>
+  </view>
+</view>

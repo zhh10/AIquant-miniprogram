@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"赛事报名",
+  "usingComponents": {
+    "matchPlay":"/components/matchPlay/matchPlay"
+  }
+}

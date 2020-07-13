@@ -1,0 +1,28 @@
+<view class="wrap">
+  <view class="nav">
+      <block wx:for="{{mettingList}}" wx:key="index">
+        <view class="{{index == currentIndex?'active':''}}"
+        data-index="{{index}}"
+        bindtap="handleClick">{{item}}</view>
+      </block>
+  </view>
+  <view class="wrap-context">
+    <swiper  
+    style="height:{{swiperRPXHeight}}rpx" 
+    class="swiper" 
+    scroll-x
+    scroll-y 
+    current="{{currentIndex}}"
+    scroll-with-animation="true">
+      <swiper-item class="swiper-item">
+        <recommendList metting="{{metting}}"/>
+      </swiper-item>
+      <swiper-item class="swiper-item">
+        <workList />
+      </swiper-item>
+      <swiper-item class="swiper-item">
+        <publicList />
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

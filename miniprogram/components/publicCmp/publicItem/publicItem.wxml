@@ -1,0 +1,10 @@
+<view class="public-item">
+  <view class='title'>
+    {{public.title}}
+    <view class="tag" wx:if="{{public.importance}}">
+      <van-tag round type="primary">置顶公告</van-tag>
+    </view>
+  </view>
+  <view class="context">{{public.context}}</view>
+  <view class="author">{{public.author}}</view>
+</view>

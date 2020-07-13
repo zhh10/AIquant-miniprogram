@@ -1,0 +1,24 @@
+<view class="workItem">
+  <view class="companyName"><text>{{work.companyName}}</text></view>
+  <image class="logo" src="{{work.logo}}"></image>
+  <view class="companyDetail">公司简介</view>
+  <view>{{work.companyDetail}}</view>
+  <view class="workName">招聘岗位</view>
+  <view>{{work.workName}}</view>
+  <view class="workLocation">工作地点</view>
+  <view>{{work.workLocation}}</view>
+  <view class="workDetail">岗位描述</view>
+  <view>
+    <block wx:for="{{work.workDetail}}" wx:key="*this">
+      <view>{{index+1}}、 {{item}}</view>
+    </block>
+  </view>
+  <view class="workRequire">岗位要求</view>
+  <view>
+    <block wx:for="{{work.workRequire}}" wx:key="*this">
+      <view>{{index+1}}、 {{item}}</view>
+    </block>
+  </view>
+  <view class="hrEmail"><text>联系邮箱</text></view>
+  <view><text>{{work.hrEmail}}</text></view>
+</view>

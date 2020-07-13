@@ -1,0 +1,8 @@
+<view wx:if="{{commentHistory.length > 0}}">
+  <block wx:for="{{commentHistory}}" wx:key="index">
+    <commentItem Item="{{item}}"/>
+  </block>
+</view>
+<view class="none" wx:if="{{commentHistory.length === 0}}">
+  你还没有发布过
+</view>

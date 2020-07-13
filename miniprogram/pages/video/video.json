@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"课程",
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index",
+    "van-field": "@vant/weapp/field/index"
+  }
+}
